@@ -18,6 +18,6 @@ public class DemoApplication {
 
 	@GetMapping("/hello/{name}")
 	public String hello (@PathVariable String name) {
-		return String.format("hello ", name);
+		return String.format("hello %s", name);
 	}
 }
